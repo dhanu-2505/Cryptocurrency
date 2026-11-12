@@ -1,0 +1,59 @@
+.coin-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all var(--transition);
+}
+.coin-card:hover {
+  border-color: var(--accent-blue-border);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.coin-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coin-card-rank {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.coin-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coin-card-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.coin-card-symbol {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.coin-card-price {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-primary);
+}
+
+.coin-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coin-card-mcap {
+  font-size: 12px;
+  color: var(--text-muted);
+}

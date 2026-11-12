@@ -1,0 +1,47 @@
+.refresh-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.refresh-btn {
+  gap: 7px;
+}
+
+.refresh-btn .spin {
+  animation: spin 0.8s linear infinite;
+}
+
+.refresh-toast {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: var(--radius-full);
+  animation: fadeIn 0.2s ease;
+  white-space: nowrap;
+}
+
+.refresh-toast.success {
+  background: var(--gain-bg);
+  color: var(--gain-color);
+  border: 1px solid var(--gain-border);
+}
+
+.refresh-toast.error {
+  background: var(--loss-bg);
+  color: var(--loss-color);
+  border: 1px solid var(--loss-border);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .refresh-toast { display: none; }
+}

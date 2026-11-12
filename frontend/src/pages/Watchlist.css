@@ -1,0 +1,144 @@
+.watchlist-page {
+  padding: var(--spacing-lg, 24px);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.add-watchlist-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.coin-select {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 6px 12px;
+  border-radius: var(--radius-md, 8px);
+  font-size: 0.875rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+
+.coin-select:focus {
+  border-color: var(--accent-blue);
+}
+
+.watchlist-table-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg, 12px);
+  overflow: hidden;
+}
+
+.coin-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.coin-name-cell:hover .coin-name-bold {
+  color: var(--accent-blue);
+}
+
+.coin-name-bold {
+  font-weight: 600;
+  transition: color var(--transition);
+}
+
+.coin-symbol-pill {
+  font-size: 0.75rem;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm, 4px);
+  font-weight: 500;
+}
+
+.trend-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: var(--radius-full, 9999px);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.trend-strong-uptrend,
+.trend-uptrend {
+  background: var(--gain-bg);
+  color: var(--gain-color);
+  border: 1px solid var(--gain-border);
+}
+
+.trend-neutral {
+  background: rgba(122, 138, 166, 0.1);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.trend-downtrend,
+.trend-strong-downtrend {
+  background: var(--loss-bg);
+  color: var(--loss-color);
+  border: 1px solid var(--loss-border);
+}
+
+.volatility-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: var(--radius-full, 9999px);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.vol-low {
+  background: rgba(16, 217, 135, 0.1);
+  color: var(--gain-color);
+}
+
+.vol-medium {
+  background: var(--warning-bg);
+  color: var(--warning-color);
+}
+
+.vol-high {
+  background: var(--loss-bg);
+  color: var(--loss-color);
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-action-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm, 6px);
+  padding: 5px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+}
+
+.icon-action-btn:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+.icon-action-btn.delete-btn:hover {
+  color: var(--loss-color);
+  border-color: var(--loss-border);
+  background: var(--loss-bg);
+}

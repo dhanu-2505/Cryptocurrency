@@ -1,0 +1,17 @@
+.main-content.sidebar-collapsed {
+  margin-left: 64px;
+}
+
+.main-content.sidebar-collapsed .header {
+  left: 64px;
+}
+
+@media (max-width: 768px) {
+  .main-content,
+  .main-content.sidebar-collapsed {
+    margin-left: 0;
+  }
+  .main-content .header {
+    left: 0 !important;
+  }
+}
